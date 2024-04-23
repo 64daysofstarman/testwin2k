@@ -8,12 +8,12 @@ onload = function()
         wasm_path: "v86.wasm",
         bios: { url: "seabios.bin" },
         vga_bios: { url: "vgabios.bin" },
-        fda:{
-            url: "kolibrios.img",
+        cdrom:{
+            url: "http://old-releases.ubuntu.com/releases/4.10/warty-release-live-i386.iso",
             size: 2 * 1024 * 1024 * 1024,
             async: true
         },
-        memory_size: 1000 * 1024 * 1024,
+        memory_size: 2000 * 1024 * 1024,
         screen_container: screen_container,
         autostart: true,
     });
